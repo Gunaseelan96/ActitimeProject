@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class EnterTimeTrackPage {
-	@FindBy(xpath = "//a[text()='Logout']")
+	@FindBy(xpath = "//a[@class='logout']")//a[text()='Logout' and @id='logoutLink']
 	private WebElement logOutBtn;
 	
 	@FindBy(xpath ="//div[text()='Tasks']")
